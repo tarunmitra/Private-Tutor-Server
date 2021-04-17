@@ -26,9 +26,9 @@ const client = new MongoClient(uri, {
 });
 client.connect((err) => {
   const serviceCollection = client.db("privateTutor").collection("services");
-  const orderCollection = client.db("privateTutor").collection("order");
-  const adminCollection = client.db("privateTutor").collection("admin");
-  const reviewCollection = client.db("privateTutor").collection("review");
+  const orderCollection = client.db("privateTutor").collection("orders");
+  const adminCollection = client.db("privateTutor").collection("admins");
+  const reviewCollection = client.db("privateTutor").collection("reviews");
 
   //API's For Services
   //Add new Service to database
